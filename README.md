@@ -1,68 +1,48 @@
-💻 Mateus.dev
+# 💻 Mateus.dev
 
-Projeto desenvolvido utilizando Java, Spring Boot e React, com o objetivo de [descrever brevemente o objetivo do projeto].
+Portfólio pessoal desenvolvido com **Java, Spring Boot e React**, com o objetivo de apresentar meus projetos, habilidades e experiências na área de desenvolvimento de software.
 
-A aplicação conta com uma API REST desenvolvida em Spring Boot e uma interface web construída com React, permitindo [descrever as principais ações que o usuário pode realizar].
+O projeto conta com uma interface web desenvolvida em React e uma API REST utilizando Spring Boot, integrando as informações necessárias para apresentar meu trabalho como desenvolvedor.
 
-🛠 Tecnologias
-Java 17
-Spring Boot
-React.js
-JavaScript
-HTML5
-CSS3
-Maven
-REST API
-[Banco de dados utilizado]
-⚡ Funcionalidades
+---
 
-A aplicação disponibiliza as seguintes funcionalidades:
+# 🛠 Tecnologias
 
-[Funcionalidade 1]
-[Funcionalidade 2]
-[Funcionalidade 3]
-[Funcionalidade 4]
-🏗 Arquitetura
+- Java 17
+- Spring Boot
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Maven
+- REST API
+
+---
+
+# ⚡ Funcionalidades
+
+O portfólio tem como objetivo apresentar minha trajetória e meus conhecimentos em tecnologia.
+
+- 👨‍💻 Apresentação pessoal
+- 🚀 Exibição de projetos desenvolvidos
+- 🛠 Apresentação das tecnologias e habilidades
+- 📂 Acesso aos repositórios dos projetos
+- 📧 Informações para contato
+
+---
+
+# 🏗 Arquitetura
 
 O projeto é dividido em duas partes principais:
 
-Backend: API REST desenvolvida com Java e Spring Boot, responsável pelas regras de negócio, processamento e comunicação com o banco de dados.
-Frontend: Interface desenvolvida com React.js, responsável pela interação com o usuário e consumo dos endpoints da API.
-🚀 Como Executar
-1️⃣ Clonar o repositório
-git clone [URL_DO_REPOSITORIO]
-2️⃣ Executar o Backend
+- **Backend:** API REST desenvolvida com Java e Spring Boot, responsável pelo processamento e disponibilização dos dados da aplicação.
+- **Frontend:** Interface desenvolvida com React.js, responsável pela apresentação das informações e interação com o usuário.
 
-Acesse a pasta do backend:
+---
 
-cd [PASTA_DO_BACKEND]
+# ▶️ Como Executar
 
-Execute a aplicação com Maven:
+## 1️⃣ Clonar o repositório
 
-mvn spring-boot:run
-
-O backend estará disponível em:
-
-http://localhost:8080
-3️⃣ Executar o Frontend
-
-Em outro terminal, acesse a pasta do frontend:
-
-cd [PASTA_DO_FRONTEND]
-
-Instale as dependências:
-
-npm install
-
-Inicie a aplicação:
-
-npm run dev
-
-O frontend estará disponível no endereço exibido pelo terminal, normalmente:
-
-http://localhost:5173
-👨‍💻 Desenvolvedor
-
-Mateus Ribas
-
-Estudante de Engenharia de Software na PUC Minas, com interesse em desenvolvimento de software, principalmente em backend, APIs REST e bancos de dados.
+```bash
+git clone URL_DO_REPOSITORIO
