@@ -1,0 +1,111 @@
+.explorador {
+    width: 220px;
+    min-width: 220px;
+
+    height: 100%;
+
+    background: #262626;
+
+    border-right: 1px solid #33353f;
+
+    color: #cccccc;
+
+    font-family: "Segoe UI", sans-serif;
+
+    overflow: hidden;
+}
+
+.titulo {
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 12px;
+
+    color: #cccccc;
+
+    font-size: 11px;
+
+    letter-spacing: 0.4px;
+}
+
+.projeto {
+    width: 100%;
+}
+
+.pasta {
+    height: 23px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 6px;
+
+    color: #d4d4d4;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.pasta:hover {
+    background: #2a2d2e;
+}
+
+.seta {
+    width: 17px;
+
+    color: #cccccc;
+
+    font-size: 11px;
+}
+
+.conteudo {
+    padding-left: 13px;
+}
+
+.arquivo {
+    height: 23px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding-left: 17px;
+
+    color: #cccccc;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.arquivo:hover {
+    background: #2a2d2e;
+}
+
+.iconeJava {
+    color: #e8ab53;
+    font-size: 9px;
+}
+
+.iconeTexto {
+    color: #75beff;
+    font-size: 9px;
+}
+
+.iconeMarkdown {
+    color: #519aba;
+    font-size: 9px;
+}
+
+.iconeJson {
+    color: #cbcb41;
+    font-size: 9px;
+}

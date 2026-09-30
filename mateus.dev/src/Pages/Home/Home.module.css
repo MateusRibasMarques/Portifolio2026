@@ -1,0 +1,53 @@
+.home {
+    position: fixed;
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    overflow: hidden;
+
+    background: #282a36;
+}
+
+.aplicacao {
+    width: calc(100vw - 48px);
+    height: 100vh;
+
+    min-width: 0;
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.corpo {
+    width: 100%;
+    height: calc(100vh - 38px);
+
+    min-width: 0;
+    min-height: 0;
+
+    display: flex;
+
+    overflow: hidden;
+}
+
+.conteudo {
+    flex: 1;
+
+    width: calc(100% - 220px);
+    height: 100%;
+
+    min-width: 0;
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
