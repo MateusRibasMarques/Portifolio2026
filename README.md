@@ -1,21 +1,19 @@
 # 💻 Mateus.dev
 
-Portfólio pessoal desenvolvido com **Java, Spring Boot e React**, com o objetivo de apresentar meus projetos, habilidades e experiências na área de desenvolvimento de software.
+Portfólio pessoal desenvolvido com **React**, com o objetivo de apresentar meus projetos, habilidades e experiências na área de desenvolvimento de software.
 
-O projeto conta com uma interface web desenvolvida em React e uma API REST utilizando Spring Boot, integrando as informações necessárias para apresentar meu trabalho como desenvolvedor.
+O projeto conta com uma interface web desenvolvida em React integrando as informações necessárias para apresentar meu trabalho como desenvolvedor.
 
 ---
 
 # 🛠 Tecnologias
 
-- Java 17
-- Spring Boot
+
 - React.js
 - JavaScript
 - HTML5
 - CSS3
-- Maven
-- REST API
+
 
 ---
 
@@ -35,7 +33,7 @@ O portfólio tem como objetivo apresentar minha trajetória e meus conhecimentos
 
 O projeto é dividido em duas partes principais:
 
-- **Backend:** API REST desenvolvida com Java e Spring Boot, responsável pelo processamento e disponibilização dos dados da aplicação.
+- **Backend:** Responsável pelo processamento e disponibilização dos dados da aplicação.
 - **Frontend:** Interface desenvolvida com React.js, responsável pela apresentação das informações e interação com o usuário.
 
 ---
