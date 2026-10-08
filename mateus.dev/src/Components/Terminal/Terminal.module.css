@@ -1,8 +1,10 @@
 .terminal {
+    position: relative;
+
     width: 100%;
 
-    height: 180px;
-    min-height: 180px;
+    display: flex;
+    flex-direction: column;
 
     background: #1f1f1f;
 
@@ -15,8 +17,27 @@
     overflow: hidden;
 }
 
+.alca {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+
+    height: 5px;
+
+    cursor: row-resize;
+
+    z-index: 10;
+}
+
+.alca:hover,
+.alcaAtiva {
+    background: #007acc;
+}
+
 .cabecalhoTerminal {
     height: 35px;
+    min-height: 35px;
 
     display: flex;
     align-items: center;
@@ -47,6 +68,13 @@
     font-family: "Segoe UI", sans-serif;
 
     font-size: 11px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.abaTerminal:hover {
+    color: #f8f8f2;
 }
 
 .abaAtiva {
@@ -58,9 +86,9 @@
 .controlesTerminal {
     display: flex;
 
-    gap: 12px;
+    gap: 6px;
 
-    padding-right: 12px;
+    padding-right: 8px;
 
     color: #858585;
 
@@ -69,7 +97,29 @@
     font-size: 13px;
 }
 
+.botao {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.botao:hover {
+    background: #3c3c3c;
+    color: #ffffff;
+}
+
 .conteudoTerminal {
+    flex: 1;
+    min-height: 0;
+
     padding: 11px 15px;
 
     color: #d4d4d4;
@@ -78,7 +128,7 @@
 
     line-height: 19px;
 
-    overflow: hidden;
+    overflow: auto;
 }
 
 .usuario {
@@ -105,4 +155,35 @@
     margin-top: 5px;
 
     color: #d4d4d4;
+}
+
+.mensagem {
+    color: #9d9d9d;
+}
+
+.barraFechada {
+    height: 24px;
+    min-height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 12px;
+
+    background: #1f1f1f;
+
+    border-top: 1px solid #33353f;
+
+    color: #858585;
+
+    font-family: "Segoe UI", sans-serif;
+    font-size: 11px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.barraFechada:hover {
+    color: #f8f8f2;
 }
