@@ -1,36 +1,30 @@
 import estilos from "./Header.module.css";
 
-function Header() {
+function Header({ abertos, ativo, aoSelecionar, aoFechar }) {
     return (
         <header className={estilos.cabecalho}>
             <div className={estilos.abas}>
-                <div className={`${estilos.aba} ${estilos.abaAtiva}`}>
-                    <span className={estilos.iconeArquivo}>
-                        ◇
-                    </span>
+                {abertos.map((nome) => (
+                    <div
+                        key={nome}
+                        className={`${estilos.aba} ${nome === ativo ? estilos.abaAtiva : ""}`}
+                        onClick={() => aoSelecionar(nome)}
+                    >
+                        <span className={estilos.iconeArquivo}>◇</span>
 
-                    <span>
-                        home.java
-                    </span>
+                        <span>{nome}</span>
 
-                    <span className={estilos.fechar}>
-                        ×
-                    </span>
-                </div>
-
-                <div className={estilos.aba}>
-                    <span className={estilos.iconeArquivo}>
-                        ◇
-                    </span>
-
-                    <span>
-                        projects.java
-                    </span>
-
-                    <span className={estilos.fechar}>
-                        ×
-                    </span>
-                </div>
+                        <span
+                            className={estilos.fechar}
+                            onClick={(evento) => {
+                                evento.stopPropagation();
+                                aoFechar(nome);
+                            }}
+                        >
+                            ×
+                        </span>
+                    </div>
+                ))}
             </div>
 
             <div className={estilos.controlesJanela}>

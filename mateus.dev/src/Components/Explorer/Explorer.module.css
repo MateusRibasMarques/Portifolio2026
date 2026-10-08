@@ -13,6 +13,7 @@
     font-family: "Segoe UI", sans-serif;
 
     overflow: hidden;
+    user-select: none;
 }
 
 .titulo {
@@ -61,10 +62,16 @@
     color: #cccccc;
 
     font-size: 11px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.15s ease;
 }
 
-.conteudo {
-    padding-left: 13px;
+.fechada {
+    transform: rotate(-90deg);
 }
 
 .arquivo {
