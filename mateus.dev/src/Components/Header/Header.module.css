@@ -103,3 +103,11 @@
 .fecharJanela {
     background: #ff5f57;
 }
+.aba {
+    cursor: pointer;
+    user-select: none;
+}
+
+.fechar {
+    cursor: pointer;
+}

@@ -1,84 +1,56 @@
+import { buscarConteudo } from "../Explorer/Explorer";
 import estilos from "./Editor.module.css";
 
-function Editor() {
-    const linhas = Array.from(
-        { length: 35 },
-        (_, indice) => String(indice + 1).padStart(2, "0")
-    );
+const expressao = /("[^"]*"|\b(?:public|class|static|void|private|return|new)\b|\b[A-Z][A-Za-z0-9]*\b|[{}()])/g;
+
+const palavras = ["public", "class", "static", "void", "private", "return", "new"];
+
+function classeDoTrecho(trecho) {
+    if (trecho.startsWith('"')) return estilos.texto;
+    if (palavras.includes(trecho)) return estilos.palavra;
+    if (/^[A-Z]/.test(trecho)) return estilos.classe;
+    return estilos.simbolo;
+}
+
+function colorir(linha) {
+    return linha.split(expressao).map((parte, indice) => {
+        if (indice % 2 === 0) {
+            return parte;
+        }
+
+        return (
+            <span key={indice} className={classeDoTrecho(parte)}>
+                {parte}
+            </span>
+        );
+    });
+}
+
+function Editor({ arquivo }) {
+    if (!arquivo) {
+        return (
+            <section className={estilos.editor}>
+                <div className={estilos.vazio}>Mateus.Dev</div>
+            </section>
+        );
+    }
+
+    const linhas = (buscarConteudo(arquivo) ?? "").split("\n");
+    const java = arquivo.endsWith(".java");
 
     return (
         <section className={estilos.editor}>
             <div className={estilos.codigo}>
-                <div className={estilos.numeros}>
-                    {linhas.map((linha) => (
-                        <div key={linha}>
-                            {linha}
-                        </div>
-                    ))}
-                </div>
-
-                <div className={estilos.conteudoCodigo}>
-                    <div>
-                        <span className={estilos.palavraChave}>
-                            public
-                        </span>{" "}
-                        <span className={estilos.palavraChave}>
-                            class
-                        </span>{" "}
-                        <span className={estilos.nomeClasse}>
-                            Mateus
-                        </span>{" "}
-                        {"{"}
-                    </div>
-
-                    <div className={estilos.recuo}>
-                        <span className={estilos.palavraChave}>
-                            public
-                        </span>{" "}
-                        <span className={estilos.palavraChave}>
-                            static
-                        </span>{" "}
-                        <span className={estilos.palavraChave}>
-                            void
-                        </span>{" "}
-                        <span className={estilos.nomeMetodo}>
-                            main
+                {linhas.map((linha, indice) => (
+                    <div key={indice} className={estilos.linha}>
+                        <span className={estilos.numero}>
+                            {String(indice + 1).padStart(2, "0")}
                         </span>
-                        <span>
-                            ()
-                        </span>{" "}
-                        {"{"}
-                    </div>
-
-                    <div className={estilos.recuoDuplo}>
-                        <span className={estilos.console}>
-                            Console
-                        </span>
-                        <span>
-                            .
-                        </span>
-                        <span className={estilos.metodo}>
-                            log
-                        </span>
-                        <span>
-                            (
-                        </span>
-                        <span className={estilos.texto}>
-                            "Mateus"
-                        </span>
-                        <span>
-                            );
+                        <span className={estilos.conteudo}>
+                            {java ? colorir(linha) : linha}
                         </span>
                     </div>
-
-                    <div className={estilos.recuo}>
-                        {"}"}
-                    </div>
-
-                    <div>
-                        {"}"}
-                    </div>
-                </div>
+                ))}
             </div>
         </section>
     );

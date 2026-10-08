@@ -1,91 +1,70 @@
 .editor {
     flex: 1;
-
-    width: 100%;
-    height: 100%;
-
-    min-width: 0;
     min-height: 0;
 
     background: #282a36;
 
-    overflow: hidden;
+    overflow: auto;
+
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 13px;
 }
 
 .codigo {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-
-    padding-top: 10px;
-
-    overflow: hidden;
+    padding: 12px 0;
 }
 
-.numeros {
+.linha {
+    display: flex;
+    min-height: 21px;
+    line-height: 21px;
+}
+
+.numero {
     width: 58px;
     min-width: 58px;
 
-    padding-right: 14px;
-
-    color: #6e6e7a;
+    padding-right: 24px;
 
     text-align: right;
 
-    font-family: Consolas, "Courier New", monospace;
-
-    font-size: 12px;
-
-    line-height: 21px;
+    color: #6b7089;
 
     user-select: none;
 }
 
-.conteudoCodigo {
-    min-width: 0;
+.conteudo {
+    color: #e6e6e6;
 
-    padding-left: 10px;
-
-    color: #f8f8f2;
-
-    font-family: Consolas, "Courier New", monospace;
-
-    font-size: 14px;
-
-    line-height: 21px;
-
-    white-space: nowrap;
+    white-space: pre;
 }
 
-.recuo {
-    padding-left: 24px;
+.palavra {
+    color: #7aa2f7;
 }
 
-.recuoDuplo {
-    padding-left: 48px;
-}
-
-.palavraChave {
-    color: #569cd6;
-}
-
-.nomeClasse {
+.classe {
     color: #4ec9b0;
-}
-
-.nomeMetodo {
-    color: #dcdcaa;
-}
-
-.console {
-    color: #4ec9b0;
-}
-
-.metodo {
-    color: #dcdcaa;
 }
 
 .texto {
     color: #ce9178;
+}
+
+.simbolo {
+    color: #ffd866;
+}
+
+.vazio {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #3f4256;
+
+    font-size: 28px;
+
+    user-select: none;
 }
