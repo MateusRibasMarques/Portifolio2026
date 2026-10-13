@@ -168,8 +168,8 @@ Estudante - concluído
                             icone: "java",
                             conteudo: `public class Contact {
     private String github = "github.com/MateusRibasMarques";
-    private String linkedin = "linkedin.com/in/seuusuario";
-    private String email = "seuemail@email.com";
+    private String linkedin = "linkedin.com/in/mateusribas";
+    private String email = "marcalribas315@gmail.com";
 }`,
                         },
                     ],

@@ -9,13 +9,7 @@ const PROJETOS = [
         tecnologias: ["Java"],
         imagem: "/projetos/loginpuc.png",
     },
-    {
-        nome: "FIPE Rest API",
-        descricao:
-            "API REST desenvolvida com Spring Boot para consulta de informações de veículos utilizando dados da Tabela FIPE.",
-        tecnologias: ["Spring Boot", "REST API"],
-        imagem: "/projetos/fipe.png",
-    },
+   
 ];
 
 function normalizar(texto) {
