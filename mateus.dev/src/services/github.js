@@ -69,3 +69,22 @@ export async function buscarProjetos() {
         })
     );
 }
+export async function buscarRepositorios() {
+    const resposta = await fetch(
+        `${BASE}/users/${USUARIO}/repos?per_page=100&sort=updated`
+    );
+
+    if (!resposta.ok) {
+        throw new Error("Não foi possível buscar os repositórios");
+    }
+
+    const repositorios = await resposta.json();
+
+    return repositorios.map((repo) => ({
+        id: repo.id,
+        nome: repo.name,
+        linguagem: repo.language,
+        link: repo.html_url,
+        atualizadoEm: repo.updated_at,
+    }));
+}
