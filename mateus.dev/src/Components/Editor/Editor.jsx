@@ -1,5 +1,6 @@
 import { buscarConteudo } from "../Explorer/Explorer";
 import estilos from "./Editor.module.css";
+import Projetos from "../Projetos/Projetos";
 
 const expressao = /("[^"]*"|\b(?:public|class|static|void|private|return|new)\b|\b[A-Z][A-Za-z0-9]*\b|[{}()])/g;
 
@@ -31,6 +32,14 @@ function Editor({ arquivo }) {
         return (
             <section className={estilos.editor}>
                 <div className={estilos.vazio}>Mateus.Dev</div>
+            </section>
+        );
+    }
+
+    if (arquivo === "projects.java") {
+        return (
+            <section className={estilos.editor}>
+                <Projetos />
             </section>
         );
     }

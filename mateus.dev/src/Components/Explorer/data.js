@@ -23,7 +23,8 @@ export const arvore = {
                     conteudo: `public class Projects {
     public static void main() {
         Console.log("FrameTech");
-        Console.log("ApiMoney");
+        Console.log("FIPE Rest API");
+        Console.log("DriveON");
     }
 }`,
                 },
@@ -36,11 +37,11 @@ export const arvore = {
                             tipo: "arquivo",
                             icone: "java",
                             conteudo: `public class SobreMim {
-    private String nome = "Mateus";
+    private String nome = "Mateus Ribas Marques";
     private String funcao = "Desenvolvedor";
-    private String formacao = "Cursando Ensino Técnico";
-    private String area = "Tecnologia da Informação (TI)";
-    private String objetivo = "Seguir carreira como desenvolvedor";
+    private String graduacao = "Engenharia de Software - PUC Minas";
+    private String tecnico = "Técnico em Informática - Cotemig";
+    private String area = "Back-end, APIs e bancos de dados";
     private String[] hobbies = {"Música", "Futebol"};
 
     public String apresentar() {
@@ -54,15 +55,17 @@ export const arvore = {
                             icone: "markdown",
                             conteudo: `# Sobre Mim
 
-Olá! Eu sou o Mateus, desenvolvedor apaixonado por
-tecnologia da informação.
+Olá! Eu sou o Mateus Ribas Marques, desenvolvedor e
+estudante de Engenharia de Software.
 
 ## Formação:
-Cursando Ensino Técnico na área de tecnologia, onde
-venho construindo a base para atuar como desenvolvedor.
+Engenharia de Software na PUC Minas (cursando) e
+Técnico em Informática no Cotemig.
 
 ## Área de atuação:
-Desenvolvimento de software, com foco em Java e React.
+Desenvolvimento de software, com foco em Back-end, APIs
+e bancos de dados, usando Java, Spring Boot, React e
+PostgreSQL.
 
 ## Interesses:
 Criar soluções que resolvem problemas reais; aprender
@@ -81,15 +84,16 @@ Música e futebol.`,
                             icone: "markdown",
                             conteudo: `# About Me
 
-Hi! I'm Mateus, a developer passionate about
-information technology.
+Hi! I'm Mateus Ribas Marques, a developer and
+Software Engineering student.
 
 ## Education:
-Currently enrolled in a technical high school program in
-technology, building the foundation to work as a developer.
+Software Engineering at PUC Minas (in progress) and
+a Technical Diploma in Computer Science from Cotemig.
 
 ## Field of work:
-Software development, focused on Java and React.
+Software development, focused on back-end, APIs and
+databases, using Java, Spring Boot, React and PostgreSQL.
 
 ## Interests:
 Building solutions that solve real problems; learning
@@ -105,30 +109,6 @@ Music and football.`,
                     ],
                 },
                 {
-                    nome: "Projects",
-                    tipo: "pasta",
-                    filhos: [
-                        {
-                            nome: "FrameTech.java",
-                            tipo: "arquivo",
-                            icone: "java",
-                            conteudo: `public class FrameTech {
-    private String descricao = "Projeto desenvolvido durante minha formação técnica";
-    private String tecnologias = "React, Java";
-}`,
-                        },
-                        {
-                            nome: "ApiMoney.java",
-                            tipo: "arquivo",
-                            icone: "java",
-                            conteudo: `public class ApiMoney {
-    private String descricao = "API desenvolvida para praticar back-end";
-    private String tecnologias = "Java, Spring";
-}`,
-                        },
-                    ],
-                },
-                {
                     nome: "Experiencias",
                     tipo: "pasta",
                     filhos: [
@@ -138,12 +118,17 @@ Music and football.`,
                             icone: "markdown",
                             conteudo: `# Experiencias
 
-## Ensino Técnico
+## Engenharia de Software - PUC Minas
 Estudante - cursando atualmente
 
-- Aprendizado de lógica de programação e desenvolvimento de software
-- Desenvolvimento de projetos pessoais e acadêmicos
-- Buscando a primeira oportunidade na área de TI`,
+- Desenvolvimento de projetos acadêmicos com Java e Spring Boot
+- Aplicações web com React
+- Estudo de bancos de dados
+
+## Técnico em Informática - Cotemig
+Estudante - concluído
+
+- Base em lógica de programação e desenvolvimento de software`,
                         },
                     ],
                 },
@@ -156,9 +141,11 @@ Estudante - cursando atualmente
                             tipo: "arquivo",
                             icone: "json",
                             conteudo: `{
-    "linguagens": ["Java", "JavaScript"],
-    "frontend": ["React", "CSS"],
-    "backend": ["Spring"]
+    "linguagens": ["Java", "C#", "JavaScript", "TypeScript", "C", "C++"],
+    "frontend": ["React", "HTML", "CSS"],
+    "backend": ["Spring Boot"],
+    "bancos": ["PostgreSQL", "MySQL"],
+    "ferramentas": ["Git", "GitHub"]
 }`,
                         },
                         {
@@ -180,9 +167,9 @@ Estudante - cursando atualmente
                             tipo: "arquivo",
                             icone: "java",
                             conteudo: `public class Contact {
-    private String email = "seuemail@email.com";
-    private String github = "github.com/seuusuario";
+    private String github = "github.com/MateusRibasMarques";
     private String linkedin = "linkedin.com/in/seuusuario";
+    private String email = "seuemail@email.com";
 }`,
                         },
                     ],

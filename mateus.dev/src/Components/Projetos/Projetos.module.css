@@ -1,0 +1,110 @@
+.projetos {
+    padding: 24px;
+    color: #d4d4d4;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.titulo {
+    margin: 0 0 24px;
+    font-size: 20px;
+}
+
+.linhaDoTempo {
+    position: relative;
+    margin-left: 8px;
+    padding-left: 24px;
+    border-left: 2px solid #3c3c3c;
+}
+
+.cartao {
+    position: relative;
+    margin-bottom: 32px;
+    padding: 16px;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.marcador {
+    position: absolute;
+    left: -33px;
+    top: 20px;
+    width: 14px;
+    height: 14px;
+    background: #4fc1ff;
+    border-radius: 50%;
+}
+
+.data {
+    font-size: 12px;
+    color: #858585;
+    text-transform: capitalize;
+}
+
+.nome {
+    margin: 4px 0 8px;
+    font-size: 18px;
+}
+
+.descricao {
+    margin: 0 0 12px;
+    line-height: 1.5;
+}
+
+.imagem {
+    display: block;
+    width: 100%;
+    max-height: 360px;
+    object-fit: contain;
+    background: #111;
+    border-radius: 6px;
+    border: 1px solid #333;
+}
+
+.grupo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 0;
+}
+
+.rotulo {
+    min-width: 90px;
+    font-size: 12px;
+    color: #858585;
+}
+
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.etiqueta {
+    padding: 2px 10px;
+    font-size: 12px;
+    background: #2d2d2d;
+    border-radius: 12px;
+    color: #4fc1ff;
+}
+
+.link {
+    display: inline-block;
+    margin-top: 16px;
+    color: #4fc1ff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.aviso {
+    padding: 24px;
+    color: #858585;
+}
